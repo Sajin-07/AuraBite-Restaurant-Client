@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-    baseURL: "http://localhost:5000",
+    baseURL: "https://aurabite-restaurant-server.onrender.com",
     withCredentials: true,
 });
 
@@ -23,7 +23,7 @@ const useAxiosSecure = () => {
                 console.log("User signed out successfully");
     
                 // Call backend to remove the cookie (no need to send `user`)
-                await axios.post("http://localhost:5000/clearCookie",user); //ei kaj chaile authProvider.jsx ew kora jaito.
+                await axios.post("https://aurabite-restaurant-server.onrender.com/clearCookie",user); //ei kaj chaile authProvider.jsx ew kora jaito.
     
                 // Redirect user to sign-in page
                 navigate("/login", { replace: true });
@@ -51,7 +51,7 @@ export default useAxiosSecure;
 // import useAuth from "./useAuth";
 
 // const axiosSecure = axios.create({
-//     baseURL: "http://localhost:5000",
+//     baseURL: "https://aurabite-restaurant-server.onrender.com",
 //     withCredentials: true,
 // })
 // const useAxiosSecure = () => {
@@ -66,7 +66,7 @@ export default useAxiosSecure;
 //         // for 401 or 403 logout the user and move the user to the login
 //         if (status === 401 || status === 403) {
 //             await logOut();
-//             await axios.post("http://localhost:5000/clearCookie",user);
+//             await axios.post("https://aurabite-restaurant-server.onrender.com/clearCookie",user);
 //             navigate('/login');
 //         }
 //         return Promise.reject(error);

@@ -1,8 +1,8 @@
 # AuraBite Client with Aggregate
 
-Server Repo Link: [AuraBite Server with Aggregate](https://github.com/ProgrammingHero1/bistro-boss-server-with-aggregate-part_8).
+Server Repo Link: [AuraBite Server with Aggregate](https://github.com/Sajin-07/AuraBite-Restaurant-Server).
 
-## What We Did Today
+## Project Details
 
 - **Different Dashboard Home Page for User and Admin**: Implemented distinct home pages for users and administrators to provide customized experiences based on roles.
 - **Fix Login Issue and API Race Condition**: Resolved issues related to user login and addressed race conditions in API requests to ensure smooth and reliable operations.

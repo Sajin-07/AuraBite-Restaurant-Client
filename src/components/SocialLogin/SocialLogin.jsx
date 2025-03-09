@@ -24,7 +24,7 @@ const SocialLogin = () => {
             const userResponse = await axiosPublic.post('/users', userInfo);
             console.log(userResponse.data);
 
-            const tokenResponse = await axiosPublic.post('http://localhost:5000/jwt', 
+            const tokenResponse = await axiosPublic.post('https://aurabite-restaurant-server.onrender.com/jwt', 
                 { email: result.user?.email }, 
                 { withCredentials: true }
             );
@@ -78,7 +78,7 @@ export default SocialLogin;
 //                 console.log(res.data);
                 
 //                 const tok = { email: result.user?.email };
-//                 axios.post('http://localhost:5000/jwt', tok,{ withCredentials: true })
+//                 axios.post('https://aurabite-restaurant-server.onrender.com/jwt', tok,{ withCredentials: true })
 //                     .then(res => {
 //                         console.log(res.data);
 //                     });

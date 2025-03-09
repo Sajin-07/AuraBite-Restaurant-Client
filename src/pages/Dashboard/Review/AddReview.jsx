@@ -29,7 +29,7 @@ const AddReview = () => {
     };
 
     try {
-      const res = await axiosSecure.post('http://localhost:5000/reviews', reviewData);
+      const res = await axiosSecure.post('https://aurabite-restaurant-server.onrender.com/reviews', reviewData);
       console.log("Review Submitted:", res.data);
       // alert("Review submitted successfully!");
       toast.success("Review Added");

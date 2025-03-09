@@ -25,7 +25,7 @@ const Gemini = () => {
 
         try {
             // Get bot response
-            const res = await axios.post("http://localhost:5000/gemini", { 
+            const res = await axios.post("https://aurabite-restaurant-server.onrender.com/gemini", { 
                 prompt: input 
             });
             
@@ -167,7 +167,7 @@ export default Gemini;
 //         setLoading(true);
 
 //         try {
-//             const res = await axios.post("http://localhost:5000/gemini", { prompt: input });
+//             const res = await axios.post("https://aurabite-restaurant-server.onrender.com/gemini", { prompt: input });
 //             const botResponse = res.data.response || "Sorry, I couldn't understand that.";
 
 //             setMessages([...newMessages, { sender: "bot", text: botResponse }]);

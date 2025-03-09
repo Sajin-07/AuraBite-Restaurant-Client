@@ -53,7 +53,7 @@ const Cart = () => {
         };
 
         try {
-            const res = await axiosSecure.post('http://localhost:5000/create-payment', paymentData);
+            const res = await axiosSecure.post('https://aurabite-restaurant-server.onrender.com/create-payment', paymentData);
             if (res.data.paymentUrl) {
                 window.location.replace(res.data.paymentUrl);
             }
@@ -332,7 +332,7 @@ export default Cart;
 //         console.log("yooo");
 //         const paymentData = {name,email,address,city, postcode, phone,totalPrice, menuItemIds: cart.map(item => item.menuId)}
 
-//         const res = await axiosSecure.post('http://localhost:5000/create-payment',paymentData)
+//         const res = await axiosSecure.post('https://aurabite-restaurant-server.onrender.com/create-payment',paymentData)
 //         console.log(res.data);
 
 //         const redirectUrl = res.data.paymentUrl;
@@ -624,7 +624,7 @@ export default Cart;
 //         console.log("yooo");
 //         const paymentData = {name,email,address,city, postcode, phone,totalPrice, menuItemIds: cart.map(item => item.menuId)}
 
-//         const res = await axiosSecure.post('http://localhost:5000/create-payment',paymentData)
+//         const res = await axiosSecure.post('https://aurabite-restaurant-server.onrender.com/create-payment',paymentData)
 //         console.log(res.data);
 
 //         const redirectUrl = res.data.paymentUrl;

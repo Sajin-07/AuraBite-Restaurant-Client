@@ -15,7 +15,7 @@
 //     const [reviews, setReviews] = useState([]);
 
 //     useEffect(() => {
-//         fetch('http://localhost:5000/reviews')
+//         fetch('https://aurabite-restaurant-server.onrender.com/reviews')
 //             .then(res => res.json())
 //             .then(data => setReviews(data))
 //     }, [])
@@ -70,7 +70,7 @@
 //     const [reviews, setReviews] = useState([]);
 
 //     useEffect(() => {
-//         fetch('http://localhost:5000/reviews')
+//         fetch('https://aurabite-restaurant-server.onrender.com/reviews')
 //             .then(res => res.json())
 //             .then(data => setReviews(data))
 //     }, [])
@@ -133,7 +133,7 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://aurabite-restaurant-server.onrender.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
