@@ -38,7 +38,7 @@
 //                 });
 
 //                 const tok = { email };
-//                 axiosPublic.post('https://aurabite-restaurant-server.onrender.com/jwt', tok, { withCredentials: true })
+//                 axiosPublic.post('https://aura-bite-server.vercel.app/jwt', tok, { withCredentials: true })
 //                     .then(res => console.log(res.data));
 
 //                 navigate(from, { replace: true });

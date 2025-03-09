@@ -143,12 +143,12 @@ import ReservationHistory from "../pages/Dashboard/Reservation/ReservationHistor
         // {
         //   path: 'updateItem/:id',
         //   element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-        //   loader: ({params}) => fetch(`https://aurabite-restaurant-server.onrender.com/menu/${params.id}`)
+        //   loader: ({params}) => fetch(`https://aura-bite-server.vercel.app/menu/${params.id}`)
         // },
         {
           path: 'updateItem/:id',
           element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-          loader: ({params}) => fetch(`https://aurabite-restaurant-server.onrender.com/menu/${params.id}`).then(res => res.json())
+          loader: ({params}) => fetch(`https://aura-bite-server.vercel.app/menu/${params.id}`).then(res => res.json())
         },
         {
           path: 'users',

@@ -17,7 +17,7 @@ const NavBar = () => {
 
     const handleLogOut = async () => {
         try {
-            await axiosPublic.post("https://aurabite-restaurant-server.onrender.com/clearCookie", user, { withCredentials: true }); 
+            await axiosPublic.post("https://aura-bite-server.vercel.app/clearCookie", user, { withCredentials: true }); 
             await logOut();
         } catch (error) {
             console.log(error);
