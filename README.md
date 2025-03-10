@@ -73,7 +73,6 @@ npm install
 ### **▶ Running the Application**
 #### **Frontend**
 ```bash
-cd client  # Navigate to the frontend directory
 npm run dev  # Start the React app
 ```
 
