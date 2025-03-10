@@ -52,7 +52,7 @@ AuraBite is a **MERN stack** restaurant management system that offers a seamless
 - **File Storage** – ImageBB
 - **Email Service** – SendGrid
 - **AI Chatbot** – Gemini AI
-- **Hosting** – Vercel (Frontend), Render/Vercel (Backend)
+- **Hosting** – Firebase (Frontend), Vercel (Backend)
 
 ---
 
